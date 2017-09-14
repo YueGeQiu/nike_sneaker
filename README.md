@@ -1,5 +1,4 @@
 # YueGeQiu NIKE SNEAKER 🐸
----
 
 A Python script help checking NIKE SNKRS release page in CLI. No longer need to open a browser to check the pages.
 
