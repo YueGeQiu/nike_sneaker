@@ -14,6 +14,8 @@ A Python script help checking NIKE SNKRS release page in CLI. No longer need to 
 # Make sure requirements are met
 git clone https://github.com/YueGeQiu/nike_sneaker.git
 cd nike_sneaker
+# Switch to Python3 Env
+pip install -r requirements.txt
 python main.py
 ```
 
