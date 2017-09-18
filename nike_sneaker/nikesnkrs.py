@@ -37,11 +37,15 @@ class NikeSNKRS(object):
             # wait for JS to finish the pages
             time.sleep(wait_time)
             # TODO check load more unit it not exists
-            load_more_btn = driver.find_element_by_xpath(
+            try:
+                load_more_btn = driver.find_element_by_xpath(
                 # "//a[@'js-load-more ncss-brand bg-white border-top-light-grey u-sm-b u-uppercase u-align-center pt6-sm pb6-sm pt12-lg pb11-lg']")
-                "//a[starts-with(@class,'js-load-more ')]")
-            load_more_btn.click()
-            time.sleep(wait_time)
+                    "//a[starts-with(@class,'js-load-more ')]")
+                load_more_btn.click()
+                time.sleep(wait_time)
+            except Exception:
+                _logger.info("No load more button found")
+
             end_time = time.time()
             self.soup = BeautifulSoup(driver.page_source, "lxml")
             _logger.debug(self.soup.prettify())
