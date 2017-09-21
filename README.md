@@ -1,6 +1,7 @@
 # YueGeQiu NIKE SNEAKER 🐸
 
 A Python script help checking NIKE SNKRS release page in CLI. No longer need to open a browser to check the pages.
+[![Build Status](https://travis-ci.org/YueGeQiu/nike_sneaker.svg?branch=master)](https://travis-ci.org/YueGeQiu/nike_sneaker)
 
 ## Requirements
 
