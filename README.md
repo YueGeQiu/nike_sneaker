@@ -7,7 +7,7 @@ A Python script help checking NIKE SNKRS release page in CLI. No longer need to 
 ## Requirements
 
 * Python 3 (Python 2 is not tested)
-* Selenium with [PhantomJS](http://phantomjs.org/)
+* Selenium with [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome)
 
 ## Usage
 

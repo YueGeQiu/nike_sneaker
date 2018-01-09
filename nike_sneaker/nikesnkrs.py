@@ -20,7 +20,7 @@ class NikeSNKRSException(Exception):
 
 
 class NikeSNKRS(object):
-    def __init__(self, web_driver='phantomjs'):
+    def __init__(self, web_driver='headless-chrome'):
         self._web_driver_type = web_driver
         self.soup = None
         self.sneakers = []
@@ -31,6 +31,11 @@ class NikeSNKRS(object):
         try:
             if self._web_driver_type == 'phantomjs':
                 driver = webdriver.PhantomJS()
+            elif self._web_driver_type == 'headless-chrome':
+                # headless mode
+                options = webdriver.ChromeOptions()
+                options.add_argument('headless')
+                driver = webdriver.Chrome(chrome_options=options)
             else:
                 raise NikeSNKRSException("bad web driver type")
             driver.get(NIKE_SNEAKER_URL)

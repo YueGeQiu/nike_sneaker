@@ -1,4 +1,4 @@
 requests
 beautifulsoup4
 lxml
-selenium
+selenium>=3.8.0
