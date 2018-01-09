@@ -59,7 +59,7 @@ class NikeSNKRS(object):
 
     def __parse_item_div(self, item_div):
         # item id / name and hyper link
-        js_card_link = item_div.find_all('a', class_='js-card-link card-link u-sm-b', href=True, limit=1)[0]
+        js_card_link = item_div.find_all('a', class_='js-card-link card-link d-sm-b', href=True, limit=1)[0]
         href = js_card_link['href']
         name = href.split('/')[-1]
         s = NikeNewSneaker(name)
