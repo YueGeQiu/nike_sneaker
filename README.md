@@ -1,5 +1,7 @@
 # YueGeQiu NIKE SNEAKER 🐸 
 
+NOTICE: NIKE SNKRS page has been changed, now this tool CANNOT parse the latest website.
+
 A Python script help checking NIKE SNKRS release page in CLI. No longer need to open a browser to check the pages.
 
 [![Build Status](https://travis-ci.org/YueGeQiu/nike_sneaker.svg?branch=master)](https://travis-ci.org/YueGeQiu/nike_sneaker)
